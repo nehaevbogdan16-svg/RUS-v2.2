@@ -460,4 +460,19 @@ textarea {
         align-items: flex-start;
         gap: 10px;
     }
+}@media (max-width: 768px) {
+
+  .form-grid {
+    display: block; /* ключевое */
+  }
+
+  .form-grid > * {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .full {
+    grid-column: unset !important;
+  }
+
 }
