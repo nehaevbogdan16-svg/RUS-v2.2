@@ -46,13 +46,13 @@ nav a {
     text-decoration: none;
     transition: 0.2s;
     display: inline-block;
-    box-shadow: none; /* ������ �������� */
+    box-shadow: none; /* óáðàëè ñâå÷åíèå */
 }
 
     .btn:hover {
         transform: translateY(-1px);
         background: #0a357f;
-        box-shadow: none; /* ������ hover glow */
+        box-shadow: none; /* óáðàëè hover glow */
     }
 /* SECTIONS */
 .section {
@@ -126,7 +126,7 @@ body {
     margin: auto;
 }
 
-/* HEADER (������) */
+/* HEADER (åäèíûé) */
 .header {
     position: sticky;
     top: 0;
@@ -169,7 +169,7 @@ nav a {
         box-shadow: 0 10px 25px rgba(11,61,145,0.2);
     }
 
-/* HERO (v4 �������) */
+/* HERO (v4 óðîâåíü) */
 .hero {
     padding: 90px 0;
     position: relative;
@@ -460,4 +460,51 @@ textarea {
         align-items: flex-start;
         gap: 10px;
     }
+}
+@media (max-width: 768px) {
+
+  /* контейнер формы */
+  .form-box {
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  /* делаем одну колонку */
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* все поля на всю ширину */
+  .input-group {
+    width: 100%;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    font-size: 16px; /* важно для iPhone (убирает zoom) */
+  }
+
+  /* textarea */
+  textarea {
+    min-height: 100px;
+  }
+
+  /* убираем растяжку на 2 колонки */
+  .full {
+    grid-column: span 1 !important;
+  }
+
+  /* нижний блок */
+  .form-bottom {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  /* кнопка на всю ширину */
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
 }
