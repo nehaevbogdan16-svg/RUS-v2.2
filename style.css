@@ -385,7 +385,7 @@ textarea {
 .logo-text {
     font-weight: 700;
     font-size: 30px;
-    background: linear-gradient(90deg,#5381B1, #679FDA);
+    background: linear-gradient(90deg, #5381B1, #679FDA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 1px;
